@@ -9,8 +9,11 @@ public class LoggingAlertHandlerDecorator implements AlertHandler {
 
     @Override
     public void handle(Alert alert) {
-        // TODO: Print a message before delegating.
-        // TODO: Call the wrapped handler.
-        // TODO: Print a message after delegating.
+        //Print a message before delegating.
+        System.out.println("Logging: Handling alert: " + alert.message());
+        //Call the wrapped handler.
+        wrapped.handle(alert);
+        //Print a message after delegating.
+        System.out.println("Logging: Finished handling alert.");
     }
 }
