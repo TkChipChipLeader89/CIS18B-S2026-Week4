@@ -5,7 +5,8 @@ import java.util.List;
 public class AlwaysFailRepository implements AlertRepository {
     @Override
     public void save(Alert alert) throws AlertStorageException {
-        // TODO: Always throw AlertStorageException.
+        //Always throw AlertStorageException.
+        throw new AlertStorageException("Storage failure");
     }
 
     @Override
