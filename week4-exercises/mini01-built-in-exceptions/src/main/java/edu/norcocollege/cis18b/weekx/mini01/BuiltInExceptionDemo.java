@@ -13,16 +13,13 @@ public class BuiltInExceptionDemo {
         } catch (ArithmeticException e) {
             System.out.println("Cannot divide by zero.");
         }
-        // TODO: Use try/catch to handle an invalid alert index.
+        //try/catch to handle an invalid alert index.
         try {
             int i = 5; // Invalid index
             System.out.println("Alert: " + alerts[i]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Invalid alert index.");
         }
-        // Purposely try an out-of-range index so the catch block runs.
-        // Expected friendly message example: Invalid alert index.
-
         System.out.println("Program completed.");
     }
 }
