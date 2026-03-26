@@ -1,1 +1,9 @@
-TODO: Replace this text with your debugging notes.
+What was the bug:
+The error was the index was going beyond the options given in the list 
+triggering an ArrayIndexOutOfBoundsException.
+How i find it:
+I use the debugger and set a breakpoint within the loop. I watch the
+index as it would go through the list and eventually out of bounds.
+What's the fix:
+The fix is simple change the i<=alerts.length to i<alerts.length. With 
+that the index should stay within the correct bounds.
